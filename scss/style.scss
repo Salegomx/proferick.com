@@ -10,8 +10,9 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-block: 0.25rem;
         .logo {
-            width: 12.5rem;
+            height: 3rem;
         }
     }
     #menuButton {
@@ -46,7 +47,7 @@ header {
                     rotate: 45deg;
                 }
                 &.center {
-                    display: none;
+                    opacity: 0;
                 }
                 &.bottom {
                     top: 50%;
