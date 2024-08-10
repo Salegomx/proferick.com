@@ -9,6 +9,8 @@ body {
     font-family: $font-family;
 }
 #mainHeader {
+    position: sticky;
+    top: 0;
     background-color: $clr-primary;
     border-bottom: 1pt solid $clr-black;
     .innerHeader {
@@ -101,7 +103,7 @@ footer {
     position: fixed;
     bottom: var(--thisOffset);
     right: var(--thisOffset);
-    width: 5rem;
+    width: 4rem;
     aspect-ratio: 1;
     border-radius: $round;
     background-color: $clr-accent;
