@@ -1,4 +1,6 @@
 /* Import fonts */
+@import '../fonts/inter';
+$font-family: Inter, sans-serif;
 
 /* Colors */
 $clr-white: #FFF;
@@ -14,7 +16,7 @@ $round: 100%;
 
 %container {
     margin-inline: auto;
-    width: min(75rem, calc(100% - 1rem));
+    width: min(85rem, calc(100% - 2rem));
 }
 
 /* Time */
