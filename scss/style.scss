@@ -11,12 +11,15 @@ header {
         justify-content: space-between;
         align-items: center;
         .logo {
-            width: 10rem;
+            width: 12.5rem;
         }
     }
     #menuButton {
+
+        outline: 1pt solid red;
+
         position: relative;
-        width: 2rem;
+        width: 2.5rem;
         aspect-ratio: 1;
         background: none;
         border: none;
