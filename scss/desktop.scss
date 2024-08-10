@@ -22,7 +22,7 @@
             }
         }
         &.subMenu:hover {
-            .icon-down {
+            a i.icon-down {
                 transform: rotate(0.5turn);
                 transition: $transition-time;
             }
