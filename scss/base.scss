@@ -1,0 +1,81 @@
+/* Abstract */
+@import './abstract/variables';
+@import './abstract/utilities';
+
+/* Components */
+@import './components/buttons';
+
+body {
+    font-family: $font-family;
+}
+#mainHeader {
+    position: sticky;
+    top: 0;
+    background-color: $clr-primary;
+    border-bottom: 1pt solid $clr-black;
+    .innerHeader {
+        @extend %container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 0.25rem;
+        .logo {
+            height: 3.25rem;
+        }
+        
+    }   
+}
+.primaryNav {
+    li a {
+        color: $clr-black;
+        &.contact {
+            color: $clr-white;
+            background-color: $clr-accent;
+        }
+    }
+}
+.contentContainer {
+    @extend %container;
+    padding-block: 5rem;
+}
+footer {
+    background-color: $clr-secondary;
+    color: $clr-white;
+    .innerFooter {
+        @extend %container;
+    }
+    .footerCopy {
+        padding-block: 0.5rem;
+        text-align: center;
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+}
+#backToTop {
+    --thisOffset: 2rem;
+    position: fixed;
+    bottom: var(--thisOffset);
+    right: var(--thisOffset);
+    width: 4rem;
+    aspect-ratio: 1;
+    border-radius: $round;
+    background-color: $clr-accent;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+
+
+/* Voy a usar esto despues */
+/*.primaryNav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    a {
+        color: #222;
+    }
+}*/

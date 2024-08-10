@@ -11,7 +11,7 @@ menuButton.addEventListener('click', () => {
 year.innerText = new Date().getFullYear();
 
 backToTop.addEventListener('click', () => {
-    document.querySelector('#mainHeader').scrollIntoView({
+    document.querySelector('#content').scrollIntoView({
         behavior: 'smooth',
         block: 'start'
     });

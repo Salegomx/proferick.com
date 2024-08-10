@@ -1,9 +1,10 @@
-/* Import fonts */
+/* Import Fonts */
 @import '../fonts/inter';
 $font-family: Inter, sans-serif;
 
 /* Colors */
 $clr-white: #FFF;
+$clr-gray: #f0f0f0;
 $clr-black: #2A2A2A;
 
 $clr-primary: #F0E2CC;
@@ -18,6 +19,20 @@ $round: 100%;
     margin-inline: auto;
     width: min(85rem, calc(100% - 2rem));
 }
+
+%btn {
+    padding: 5px;
+    color: $clr-white;
+    background-color: $clr-accent;
+    border: 1pt solid $clr-black;
+    cursor: pointer;
+    border-radius: $border-radius;
+}
+
+/* Media Queries */
+$mobile: 48em;
+$desktop: 64em;
+
 
 /* Time */
 $transition-time: 350ms;

@@ -1,0 +1,13 @@
+@import './abstract/variables';
+
+.primaryNav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    a:hover:not(.contact) {
+        opacity: 0.75;
+    }
+    .contact {
+        @extend %btn
+    }
+}
