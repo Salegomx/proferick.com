@@ -1,0 +1,58 @@
+@import './abstract/variables';
+@import './abstract/utilities';
+@import './components/buttons';
+
+header {
+    background-color: $clr-primary;
+    border-bottom: 1pt solid $clr-black;
+    .innerHeader {
+        @extend %container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            width: 10rem;
+        }
+    }
+    #menuButton {
+        position: relative;
+        width: 2rem;
+        aspect-ratio: 1;
+        background: none;
+        border: none;
+        cursor: pointer;
+        span {
+            position: absolute;
+            display: block;
+            height: 2px;
+            width: 80%;
+            left: 10%;
+            background-color: $clr-black;
+            transition: $transition-time;
+            &.top {
+                top: 25%;
+            }
+            &.center {
+                top: 50%
+            }
+            &.bottom {
+                top: 75%;
+            }
+        }
+        &.menuOpen {
+            span {
+                &.top {
+                    top: 50%;
+                    rotate: 45deg;
+                }
+                &.center {
+                    display: none;
+                }
+                &.bottom {
+                    top: 50%;
+                    rotate: -45deg;
+                }
+            }
+        }
+    }
+}

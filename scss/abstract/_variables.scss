@@ -1,0 +1,21 @@
+/* Import fonts */
+
+/* Colors */
+$clr-white: #FFF;
+$clr-black: #2A2A2A;
+
+$clr-primary: #F0E2CC;
+$clr-secondary: #014E6B;
+$clr-accent: #FF6F61;
+
+/* Shapes */
+$border-radius: 4px;
+$round: 100%;
+
+%container {
+    margin-inline: auto;
+    width: min(75rem, calc(100% - 1rem));
+}
+
+/* Time */
+$transition-time: 300ms;
