@@ -58,15 +58,16 @@
                 width: 100%;
                 padding: 1rem;
                 border-bottom: 1pt solid $clr-gray;
-                
                 &.contact {
                     color: $clr-white;
                     background-color: $clr-accent;
                 }
             }
             &.subMenu {
-                ul a {
-                    padding-left: 2rem;
+                ul {
+                    a {
+                        padding-left: 2rem;
+                    }
                 }
             }
         }
