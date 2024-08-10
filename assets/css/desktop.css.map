@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../scss/fonts/_inter.scss","../../scss/abstract/_variables.scss","../../scss/desktop.scss"],"names":[],"mappings":"AAAA,WACI,kBACA,oCCoBJ,wBACI,YACA,MAnBQ,KAoBR,iBAdS,QAeT,yBACA,eACA,cAdY,ICZhB,eACI,aACA,mBACA,SACA,qCACI","file":"desktop.css"}
+{"version":3,"sourceRoot":"","sources":["../../scss/abstract/_variables.scss","../../scss/desktop.scss"],"names":[],"mappings":"AAkBA,wBACI,YACA,MAnBQ,KAoBR,iBAdS,QAeT,yBACA,eACA,cAdY,ICRhB,eACI,aACA,mBACA,SACA,qCACI","file":"desktop.css"}

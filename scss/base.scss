@@ -1,3 +1,7 @@
+/* Import Fonts */
+@import './fonts/inter';
+$font-family: Inter, sans-serif;
+
 /* Abstract */
 @import './abstract/variables';
 @import './abstract/utilities';
@@ -22,7 +26,6 @@ body {
         .logo {
             height: 3.25rem;
         }
-        
     }   
 }
 .primaryNav {
@@ -41,14 +44,31 @@ body {
 footer {
     background-color: $clr-secondary;
     color: $clr-white;
+    &::before {
+        content: '';
+        display: block;
+        position: relative;
+        top: -15px;
+        width: 100%;
+        height: 35px;
+        background: inherit;
+        transform: skew(0deg, -3deg);
+    }
     .innerFooter {
         @extend %container;
+        .logo {
+            display: block;
+            max-width: 20rem;
+            margin-inline: auto;
+        }
+        a {
+            color: inherit;
+        }
     }
     .footerCopy {
         padding-block: 0.5rem;
         text-align: center;
         a {
-            color: inherit;
             text-decoration: underline;
         }
     }

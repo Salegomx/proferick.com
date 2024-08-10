@@ -8,6 +8,8 @@
     <link href="./assets/css/base.css" rel="stylesheet">
     <link href="./assets/css/mobile.css" rel="stylesheet" media="(max-width:64em)">
     <link href="./assets/css/desktop.css" rel="stylesheet" media="(min-width:64em)">
+
+    <link href="./assets/css/profeRickIcons.css" rel="stylesheet">
 </head>
 <body>
     <header id="mainHeader">
@@ -17,7 +19,14 @@
             </a>
             <nav class="primaryNav">
                 <ul>
-                    <li><a href="#">Servicios</a></li>
+                    <li class="subMenu">
+                        <a href="#">Servicios <i class="pri icon-down"></i></a>
+                        <ul>
+                            <li><a href="#">Mentorias Front End</a></li>
+                            <li><a href="#">Mentorioas Back End</a></li>
+                            <li><a href="#">Reclutamiento en TI</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Cursos</a></li>
                     <li><a href="#">Sobre mí</a></li>
                     <li><a href="#" class="contact">Contacto</a></li>
@@ -58,7 +67,9 @@
     </main>
     <footer id="mainFooter">
         <div class="innerFooter">
-            <img src="./assets/img/imagotype_white.svg">
+            <a class="logo" href="./index.html">
+                <img src="./assets/img/imagotype_white.svg">
+            </a>
             <nav class="footerNav">
                 <ul>
                     <li><a href="#">Servicios</a></li>
@@ -72,7 +83,9 @@
             </div>
         </div>
     </footer>
-    <button id="backToTop"></button>
+    <button id="backToTop">
+        <i class="pri icon-backToTop"></i>
+    </button>
     <script src="./assets/js/index.js"></script>
 </body>
 </html>
