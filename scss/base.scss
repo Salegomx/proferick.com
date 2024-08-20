@@ -98,8 +98,6 @@ footer {
         font-size: 35px;
     }
 }
-
-
 .contactForm {
     width: min(35rem, 100%);
     padding: 1rem;
@@ -114,17 +112,34 @@ footer {
             display: block;
         }
         span {
-            font-size: $fs-4;
+            font-size: $fs-5;
             cursor: pointer;
+            &[aria-errormessage] { /* Hidden by default */ 
+                visibility: hidden;
+                display: none;
+                margin-block: -0.5rem 1.5rem;
+                font-size: $fs-6;
+                color: $clr-error;
+            }
         }
-        input:not(input[type="submit"]), textarea {
-            margin-block: 1rem;
+        input:not([type="submit"]), textarea {
+            margin-block: 0.75rem;
             width: 100%;
             padding: 0.25rem;
             border: none;
             outline: 1pt solid $clr-gray;
             border-radius: $border-radius;
             background-color: $clr-gray-light;
+            &:focus {
+                outline: 2px solid $clr-secondary;
+            }
+            &[aria-invalid] {
+                outline: 2px solid $clr-error !important;
+                & + span[aria-errormessage] {
+                    visibility: visible;
+		            display: block;
+                }
+            }
         }
         textarea {
             resize: vertical;
@@ -134,5 +149,5 @@ footer {
         input[type="submit"] {
             margin-inline: auto 0;
         }
-    }
+    }   
 }

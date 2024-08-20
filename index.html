@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proferick.com</title>
+    <meta name="author" content="sergiogomez.mx">
+    <meta name="description" content="Ingeniero de software con 9 años de experiencia en la industria en puestos como front end/back end/fullstack.">
 
     <!-- Styles -->
     <link href="./assets/css/base.css" rel="stylesheet">
     <link href="./assets/css/mobile.css" rel="stylesheet" media="(max-width:64em)">
     <link href="./assets/css/desktop.css" rel="stylesheet" media="(min-width:64em)">
 
-    <!-- Icon -->
+    <!-- Icons -->
     <link href="./assets/css/profeRickIcons.css" rel="stylesheet">
 
     <!-- Favicon -->
@@ -60,10 +62,12 @@
                         <label for="firstName">
                             <span>Nombre:</span>
                             <input id="firstName" name="firstName" type="text">
+                            <span aria-errormessage="firstName">Introduce tu nombre</span>
                         </label>
                         <!--label for="lastName">
                             <span>Apellido</span>
                             <input id="lastName" name="lastName" type="text">
+                            <span aria-errormessage="lastName">Introduce tu apellido</span>
                         </label-->
                     </fieldset>
 
@@ -72,10 +76,12 @@
                         <label for="phone">
                             <span>Teléfono:</span>
                             <input id="phone" name="phone" type="text">
+                            <span aria-errormessage="phone">Introduce un número de teléfono valido</span>
                         </label>
                         <label for="email">
                             <span>Correo Electrónico:</span>
                             <input id="email" name="email" type="text">
+                            <span aria-errormessage="email">Introduce tu correo electrónico</span>
                         </label>
                     </fieldset>
                     
@@ -114,5 +120,6 @@
         <i class="pri icon-backToTop"></i>
     </button>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/validator.js"></script>
 </body>
 </html>
