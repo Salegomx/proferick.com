@@ -51,7 +51,7 @@ footer {
     background-color: $clr-secondary;
     color: $clr-white;
     position: relative;
-    margin-top: 5vw;
+    margin-top: 2.5vw;
     &::before {
         content: '';
         display: block;
@@ -93,9 +93,14 @@ footer {
     background-color: $clr-accent;
     cursor: pointer;
     border: none;
+    transition: $transition-time;
     .icon-backToTop {
         color: $clr-white;
         font-size: 35px;
+    }
+    &.invisible {
+        visibility: hidden;
+        opacity: 0;
     }
 }
 .contactForm {

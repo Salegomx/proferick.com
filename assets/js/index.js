@@ -10,6 +10,18 @@ menuButton.addEventListener('click', () => {
 
 year.innerText = new Date().getFullYear();
 
+window.addEventListener('scroll', () => { 
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= 100) { 
+        backToTop.classList.remove('invisible');
+    } else {
+        backToTop.classList.add('invisible');
+    }
+
+    console.log(scrollpos)
+  })
+
 backToTop.addEventListener('click', () => {
     document.querySelector('#content').scrollIntoView({
         behavior: 'smooth',
