@@ -45,29 +45,20 @@
             </button>
         </div>
     </header>
-
-
-
-
-
-
-
-
-
-
-
     
     <main id="content">
         <div class="contentContainer">
-            <section>
-                <h1>Contacto</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, accusamus ab, autem corporis culpa debitis suscipit rem magnam adipisci voluptatum necessitatibus qui, nemo facere eligendi. Ducimus tempora ut optio aliquid.</p>
+            <section class="grid-2">
+                <div>
+                    <h1>Contacto</h1>
+                    <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, accusamus ab, autem corporis culpa debitis suscipit rem magnam adipisci voluptatum necessitatibus qui, nemo facere eligendi. Ducimus tempora ut optio aliquid.</p>
+                </div>
 
-                <form id="contactForm">
+                <form id="contactForm" class="contactForm">
                     <fieldset>
                         <legend class="sr-only">Tu información personal</legend>
                         <label for="firstName">
-                            <span>Nombre</span>
+                            <span>Nombre:</span>
                             <input id="firstName" name="firstName" type="text">
                         </label>
                         <!--label for="lastName">
@@ -78,21 +69,21 @@
 
                     <fieldset>
                         <legend class="sr-only">Tus datos de contacto</legend>
-                        <label for="email">
-                            <span>Correo Electrónico</span>
-                            <input id="email" name="email" type="text">
-                        </label>
                         <label for="phone">
-                            <span>Teléfono</span>
+                            <span>Teléfono:</span>
                             <input id="phone" name="phone" type="text">
+                        </label>
+                        <label for="email">
+                            <span>Correo Electrónico:</span>
+                            <input id="email" name="email" type="text">
                         </label>
                     </fieldset>
                     
                     <fieldset>
-                        <legend class="sr-only">Comentarios</legend>
+                        <legend class="sr-only">Comentarios:</legend>
                         <label for="comments">
                             <span>Comentarios</span>
-                            <textarea id="comments" name="comments" rows="5"></textarea>
+                            <textarea id="comments" name="comments" rows="3"></textarea>
                         </label>
                         <input type="submit" class="btn" value="Continuar">
                     </fieldset>
@@ -100,22 +91,6 @@
             </section>
         </div>
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <footer id="mainFooter">
         <div class="innerFooter">

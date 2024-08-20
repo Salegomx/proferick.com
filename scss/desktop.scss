@@ -38,3 +38,7 @@
         @extend %btn
     }
 }
+
+.grid-2 {
+    grid-template-columns: 55% 1fr;
+}
