@@ -4,7 +4,7 @@ function LayoutManager() {
         this.initDates();
         this.initBackToTop();
         this.initTheme();
-        this.iniMenuTracking();
+        this.initMenuTracking();
     }
 
     this.initMenu = () => {
@@ -24,7 +24,7 @@ function LayoutManager() {
             });
         });
     }
-    
+
     this.initDates = () => {
         const currentYear = new Date().getFullYear();
         const yearsExperience =  currentYear - 2015;
@@ -77,14 +77,14 @@ function LayoutManager() {
         body.classList.contains('theme-light') ? this.setTheme('theme-dark') : this.setTheme('theme-light');
     }
 
-    this.iniMenuTracking = function() {
-        const menuLinks = document.querySelectorAll(".link-servicios");
+    this.initMenuTracking = () => {
+        const menuLinks = document.querySelectorAll(".menu-link");
 
         menuLinks.forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', () => {
                 if (typeof gtag !== 'undefined') {
                     gtag('event', 'click_menu_servicios', {
-                        'tipo_boton': 'servicios'
+                        'boton': link.textContent
                     });
                 }
              })
