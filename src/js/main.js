@@ -77,7 +77,7 @@ function LayoutManager() {
     }
 
     this.iniMenuTracking = function() {
-        const menuLinks = document.querySelectorAll("link-servicios");
+        const menuLinks = document.querySelectorAll(".link-servicios");
 
         menuLinks.forEach(link => {
             link.addEventListener('click', function() {
