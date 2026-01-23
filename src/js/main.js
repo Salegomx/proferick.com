@@ -24,7 +24,7 @@ function LayoutManager() {
             });
         });
     }
-
+    
     this.initDates = () => {
         const currentYear = new Date().getFullYear();
         const yearsExperience =  currentYear - 2015;
