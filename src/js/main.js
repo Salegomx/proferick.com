@@ -75,12 +75,23 @@ function LayoutManager() {
         const body = document.body;
         body.classList.contains('theme-light') ? this.setTheme('theme-dark') : this.setTheme('theme-light');
     }
+
+    this.iniMenuTracking = function() {
+        const menuLinks = document.querySelectorAll("link-servicios");
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'click_menu_servicios', {
+                        'tipo_boton': 'servicios'
+                    });
+                }
+             })
+        })
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     const layoutManager = new LayoutManager;
     layoutManager.init();
 })
-
-
-
