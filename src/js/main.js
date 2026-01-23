@@ -4,6 +4,7 @@ function LayoutManager() {
         this.initDates();
         this.initBackToTop();
         this.initTheme();
+        this.iniMenuTracking();
     }
 
     this.initMenu = () => {
