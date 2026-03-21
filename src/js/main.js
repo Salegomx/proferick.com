@@ -84,7 +84,8 @@ function LayoutManager() {
             link.addEventListener('click', () => {
                 if (typeof gtag !== 'undefined') {
                     gtag('event', 'click_menu_servicios', {
-                        'boton': link.textContent
+                        'boton': link.textContent,
+                        'valor': 50
                     });
                 }
              })
