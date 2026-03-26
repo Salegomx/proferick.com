@@ -1,3 +1,55 @@
+let idiomaActual = "es";
+let tiempoInicio = Date.now();
+
+// Diccionario de textos por idioma para el bloque principal (hero).
+const textos = {
+    es: {
+        title: 'Profe Rick',
+        description: years => `Ingeniero de software con ${years} años de experiencia en la industria en puestos como desarrollador Front End, Back End y Fullstack.`
+    },
+    en: {
+        title: 'Mr Rick',
+        description: years => `Software engineer with ${years} years of industry experience working as a Front End, Back End, and Fullstack developer.`
+    },
+    jp: {
+        title: 'プロフェ・リック',
+        description: years => `フロントエンド、バックエンド、フルスタック開発者として、業界で${years}年の経験を持つソフトウェアエンジニアです。`
+    }
+};
+
+function cambiarIdioma(nuevoIdioma) {
+    if (!textos[nuevoIdioma] || nuevoIdioma === idiomaActual) return;
+
+    const idiomaAnterior = idiomaActual;
+    const tiempoFin = Date.now();
+    const segundos = Math.max(0, Math.round((tiempoFin - tiempoInicio) / 1000));
+    const yearsExperience = new Date().getFullYear() - 2015;
+
+    const heroTitle = document.getElementById("hero-title");
+    const heroDescription = document.getElementById("hero-description");
+
+    if (heroTitle) {
+        heroTitle.textContent = textos[nuevoIdioma].title;
+    }
+
+    if (heroDescription) {
+        heroDescription.textContent = textos[nuevoIdioma].description(yearsExperience);
+    }
+
+    idiomaActual = nuevoIdioma;
+    tiempoInicio = Date.now();
+
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'cambio_de_idioma', {
+            idioma_anterior: idiomaAnterior,
+            idioma_nuevo: nuevoIdioma,
+            tiempo_en_idioma: segundos
+        });
+    }
+
+    console.log('cambio de idioma');
+}
+
 function LayoutManager() {
     this.init = () => {
         this.initMenu();
